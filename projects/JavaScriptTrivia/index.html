@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started</title>
+    <script src="https://unpkg.com/lodash@4.16.6"></script>
+    <link rel="stylesheet" href="dist/css/styles.css  ">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  </head>
+  <body>
+    <div class="conatiner">
+    <div class="main-content">
+        <section class = "main-header">    
+      
+            <h1 class="heading-main__text"><span class = 'accent-text'>Trivia</span> App</h1>
+            <div class="heading-main__button">
+                <button  class="main-menu__new-game button">New Game</button>
+            </div>
+            
+            <div class = "question-number"></div>   
+            <!-- <h3>Question:<div class="question-content__question"></div></h3> -->
+            <div class="score-container">
+              <h2 class="score-container__heading">
+                  Score
+              </h2>
+              
+              <p class = "score">Correct: <span class = 'correctScore '></span> </p>
+              <p class = "score">Incorect: <span class = 'incorectScore '></span></p>
+          </div>
+    
+        </section>  
+
+        <section class = "main-content">
+            <div class="menu">
+                    <div class="first-menu-content">
+                        <div class="menu-selectCatagory">
+                            <div class="catagoryBox" data-catagory = '9'>General Knowledge</div>
+                            <div class="catagoryBox" data-catagory = '17'>Science and Nature</div>
+                            <div class="catagoryBox" data-catagory = '23'>History</div>
+                            <div class="catagoryBox" data-catagory = '25'>Arts</div>
+                            <div class="catagoryBox" data-catagory = '21'>Sports</div>
+                            <div class="catagoryBox" data-catagory = '20'>Mythology</div>
+                    </div>       
+                        <div class="menu-conetent-btn">
+                            <button class="menu-conetent__next-btn button disableBtn "  disabled >Next &#8594</button>
+                        </div>
+                    </div>
+                
+                    <div class="second-menu-content">
+                        <div class="menu-form__number">
+                            <h2 class="menu-form__number-text">Number of Questions</h2>
+                            <input class = "menu-form__number-input input-form" type="number">
+                        </div>
+                        <div class="menu-form__difficulty">
+                            <h2 class = "menu-form__difficulty-heading" > Select Difficulty</h2>
+                            <select name="" class = "menu-form__difficulty-select " class = 'input-form'>
+                                <option value="easy">Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                        </div>
+                        <div class="menu-conetent-btn">
+                        <button class = "menu-form__back-btn button">&#8592 Back</button>  
+                        <button class = "menu-form__start-btn button" disabled>Start Game</button>
+                        </div>
+                    </div>
+                    
+                    <div class="loading-bar">
+                        <div class="lds-dual-ring"></div>
+                    </div>
+
+                    <div class="question-cover"> </div>
+                    <div class="question-content">
+                        <div class="questions"></div>        
+                    </div>  
+
+                    <div class="finalScore-container">
+                        <div class="finalScore__title"><strong>Final Score</strong> </div>
+                        <div class="finalScore__score">
+                        <!--   <p class = "score">Correct: <span class = 'correctScore '></span> </p>
+                            <p class = "score">Incorect: <span class = 'incorectScore '></span></p> -->
+                        </div>
+                        <div class="finalScore__percentage"></div>
+                       <!--  <div class="heading-main__button">
+                            <button  class="finalScore__new-game button" >New Game</button>
+                        </div> -->
+                    </div>             
+                </div> 
+                        
+        </section>
+    <div class="baseButton-container noDisplay">
+        <button class = 'question-content__submit-btn button' disabled>Submit</button>
+        <button class = 'menu-conetent-quest__next-btn button' disabled>Next</button>
+    </div>  
+</div>
+</div>
+    <script src="./dist/main.js"></script>
+  </body>
+</html>
